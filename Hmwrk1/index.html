@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Dates&timer</title>
+    <script src="/js/main.js" type="module"></script>
+    
+
+</head>
+<body>
+
+
+<div class="container">
+	
+<button id="switcher" onclick="switcher()" class="mainBtn" id="mainBtn">Таймер/Калькулятор дат </button>
+
+
+<div id="timerFirst" class="timer timer_all">
+	
+	<div class="time">
+		<input id="hour" type="number" max="99" min="0" value="0" class="timeNumber">
+		<p id="p1" class="semicolon">:</p>
+		<input id="minute" type="number" max="60" min="0" value="0" class="timeNumber">
+		<p id="p2" class="semicolon">:</p>
+		<input id="sec" type="number" max="60" min="0" value="0" class="timeNumber">
+	</div>
+
+	<div class="labels">
+		<p id="hour-label" class="label">Hours</p>
+		<p id="min-label" class="label minLabel">Minutes</p>
+		<p id="sec-label" class="label">Seconds</p>
+	</div>
+
+	<div class="buttons">
+		<button id="start" class="button">Start</button>
+		<button id="reset" class="button">Stop</button>
+	</div>
+</div>
+<form id="datecalc">
+	
+	<label>
+	<strong>Первая дата:</strong>
+	<input type="date" name="firstDate" />
+	</label>
+	<label>
+	<strong>Вторая дата:</strong>
+	<input type="date" name="secondDate" />
+	</label>
+	<button type="submit" class = "button">Расчитать промежуток</button>
+	<p id="datecalc__result"></p>
+	
+
+
+</form>
+</div>
+
+
+	
+<script src="js/timer.js"></script>
+<script src="js/switcher.js"></script>
+
+
+</body>
+</html>
