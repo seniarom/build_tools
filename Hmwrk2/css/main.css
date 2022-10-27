@@ -1,0 +1,87 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+    
+.container, .timer_all {
+    width: 60%;
+    height: 100%;
+    background-color:wheat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.mainBtn, .button {
+    margin: 0px auto;
+    padding: 20px;
+    background-color:plum;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid white; 
+}
+
+.mainBtn:hover, .button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black; 
+}
+
+.timer, .buttons, .time {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.buttons {
+    width: 30% ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.timeNumber {
+    background-color: white;
+    border-radius: 5px;
+    height: 200px;
+    width: 200px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.semicolon {   
+font-size: 100px;
+height: 200px;
+padding-top: 100x;
+margin-top: 100px;
+}
+
+
+.labels {
+    font-size: 40px;
+    display: inline-flex;
+    text-align: center;
+}
+
+.label {  width: 200px;
+}
+
+.minLabel{padding: 0px 60px;}
+
+#timerFirst {
+    display: block;
+}
+
+#datecalc{
+    display: none;
+    font-size: 30px;
+}
+
+.submit {
+    align-items: center;
+}
