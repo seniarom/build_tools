@@ -1,0 +1,44 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery_title {
+    font-size: 24px;
+    color: red;
+}
+
+.gallery_items {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+    &_image {
+        width: 520px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    &_title {
+        padding: 20px 0;
+    }
+
+    &_audio {
+        width: 520px;
+        height: 250px;
+    }
+
+    &_video {
+
+        max-width: 520px;
+        height: 250px;
+    }
+}
